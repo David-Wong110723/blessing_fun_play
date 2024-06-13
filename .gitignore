@@ -154,6 +154,25 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+# 忽略所有.class文件
+*.class
+
+# 忽略特定目录
+/target/
+/bin/
+
+# 忽略IDE配置文件
+.idea/
+.vscode/
+
+# 忽略日志文件
+*.log
+
+# 忽略依赖包管理器生成的文件
+node_modules/
+*.gem
+__pycache__/
+
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
