@@ -1,0 +1,21 @@
+{
+    "FaceDetection": {
+        "path": "/cfs/zhlin/sd_models/extra_models/face_tools"
+    },
+    "HumanSegmentation": {
+        "path": "/cfs/zhlin/sd_models/extra_models"
+    },
+    "blip_processor": {
+        "path": "/cfs/zhlin/sd_models/blip/blip-image-captioning-large"
+    },
+    "AniPortrait": {
+        "path": "/cfs/zhlin/projects/aigc_engine/apps/vidgen/model_weights/AniPortrait",
+        "wav2vec2": "/cfs/zhlin/projects/aigc_engine/apps/vidgen/model_weights/AniPortrait/wav2vec2-base-960h",
+        "image_encoder": "/cfs/zhlin/projects/aigc_engine/pretrained_models/AnimateAnyone/image_encoder",
+        "sd-vae-ft-mse": "/cfs/zhlin/projects/aigc_engine/pretrained_models/AnimateAnyone/sd-vae-ft-mse",
+        "stable-diffusion-v1-5": "/cfs/zhlin/projects/aigc_engine/pretrained_models/AnimateAnyone/stable-diffusion-v1-5"
+    },
+    "MagicDance": {
+        "path": "/cfs/zhlin/projects/aigc_engine/pretrained_models/MagicDance"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "detect_resolution": 512,
+    "image_resolution": 720,
+    "yolox_config": "./repos/musepose/pose/config/yolox_l_8xb8-300e_coco.py",
+    "dwpose_config": "./repos/musepose/pose/config/dwpose-l_384x288.py",
+    "yolox_ckpt": "./model_weights/dwpose/yolox_l_8x8_300e_coco.pth",
+    "dwpose_ckpt": "./model_weights/dwpose/dw-ll_ucoco_384.pth",
+    "align_frame": 0,
+    "max_frame": 300,
+    "imgfn_refer": "./assets/images/src_tmp.jpg",
+    "vidfn": "./assets/videos/0.mp4",
+    "outfn_align_pose_video": "./assets/poses/align/align_pose_tmp.mp4",
+    "outfn": "./assets/poses/align/align_demo_tmp.mp4"
+}

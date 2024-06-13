@@ -1,0 +1,1 @@
+from .face_attribute_recognition import FaceAttributeRecognition
