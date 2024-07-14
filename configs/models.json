@@ -17,5 +17,22 @@
     },
     "MagicDance": {
         "path": "/cfs/zhlin/projects/aigc_engine/pretrained_models/MagicDance"
+    },
+    "MusePose": {
+        "path": "/cfs/zhlin/projects/aigc_engine/repos/MusePose/pretrained_weights",
+        "pretrained_base_model_path": "/cfs/zhlin/projects/aigc_engine/repos/MusePose/pretrained_weights/sd-image-variations-diffusers",
+        "image_encoder_path": "/cfs/zhlin/projects/aigc_engine/repos/MusePose/pretrained_weights/image_encoder",
+        "pretrained_vae_path": "/cfs/zhlin/projects/aigc_engine/repos/MusePose/pretrained_weights/sd-vae-ft-mse",
+        "inference_config": "/cfs/zhlin/projects/aigc_engine/apps/vidgen/configs/inference_v2.yaml",
+        "motion_module_path": "/cfs/zhlin/projects/aigc_engine/repos/MusePose/pretrained_weights/MusePose/motion_module.pth",
+        "denoising_unet_path": "/cfs/zhlin/projects/aigc_engine/repos/MusePose/pretrained_weights/MusePose/denoising_unet.pth",
+        "reference_unet_path": "/cfs/zhlin/projects/aigc_engine/repos/MusePose/pretrained_weights/MusePose/reference_unet.pth",
+        "pose_guider_path": "/cfs/zhlin/projects/aigc_engine/repos/MusePose/pretrained_weights/MusePose/pose_guider.pth",
+        "weight_dtype": "fp16",
+        "pose": "/cfs/zhlin/projects/aigc_engine/repos/MusePose/pretrained_weights/dwpose",
+        "yolox_config": "/cfs/zhlin/projects/aigc_engine/apps/vidgen/srcs/pose/config/yolox_l_8xb8-300e_coco.py",
+        "yolox_ckpt": "/cfs/zhlin/projects/aigc_engine/repos/MusePose/pretrained_weights/dwpose/dw-ll_ucoco_384.pth",
+        "dwpose_config": "/cfs/zhlin/projects/aigc_engine/apps/vidgen/srcs/pose/config/dwpose-l_384x288.py",
+        "dwpose_ckpt": "/cfs/zhlin/projects/aigc_engine/repos/MusePose/pretrained_weights/dwpose/yolox_l_8x8_300e_coco.pth"
     }
 }

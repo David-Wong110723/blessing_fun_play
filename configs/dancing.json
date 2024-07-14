@@ -1,13 +1,20 @@
 {
-    "config": "./repos/musepose/configs/test_stage_2.yaml",
-    "H": 512,
-    "W": 512,
-    "L": 300,
-    "S": 48,
-    "O": 4,
-    "cfg": 3.5,
-    "seed": 12312312,
-    "steps": 20,
-    "fps": 24,
-    "skip": 1
+    "Pose": {
+        "detect_resolution": 512,
+        "image_resolution": 720,
+        "align_frame": 0,
+        "max_frame": 300
+    },
+    "Gen": {
+        "H": 512,
+        "W": 512,
+        "L": 300,
+        "S": 48,
+        "O": 4,
+        "cfg": 3.5,
+        "seed": 12312312,
+        "steps": 20,
+        "fps": 24,
+        "skip": 1
+    }
 }

@@ -5,17 +5,24 @@ import numpy as np
 import json
 from easydict import EasyDict as edict
 
-from srcs.vidgen_pipeline import VideoGENPipeline
-
+#from srcs.vidgen_pipeline import VideoGENPipeline
+from srcs.dance_pipeline import DancePipeline
 import warnings
 warnings.filterwarnings("ignore")
 
-
-pipeline = VideoGENPipeline()
-
+#pipeline = VideoGENPipeline()
+dance_pipe = DancePipeline(
+    model_cfg_path="/cfs/zhlin/projects/aigc_engine/apps/vidgen/configs/models.json", 
+    params_cfg_path="/cfs/zhlin/projects/aigc_engine/apps/vidgen/configs/dancing.json"
+)
 
 def run():
-    pipeline.dancing()
+    image_path = "/cfs/zhlin/projects/aigc_engine/apps/vidgen/assets/images/kunkun.jpg"
+    video_path = "/cfs/zhlin/projects/aigc_engine/apps/vidgen/assets/videos/dance.mp4"
+    image = Image.open(image_path).convert('RGB')
+    
+    #dance_pipe.get_aligned_pose(image, video_path)
+    dance_pipe.infer(image, "/cfs/zhlin/projects/aigc_engine/apps/vidgen/assets/videos/img_kunkun_video_dance.mp4")
 
 
 if __name__ == "__main__":
